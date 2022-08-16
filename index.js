@@ -10,8 +10,13 @@ app.get('/', (req, res) => {
 app.get('/style', (req, res) => {
     res.sendFile(path.join(__dirname, "/style.css"));
 })
+
 app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, "/about.html"));
+})
+
+app.get('/vikram', (req, res) => {
+    res.sendFile(path.join(__dirname, "/vikram.html"));
 })
 
 app.listen(3000, () => console.log("Started Express server"));
